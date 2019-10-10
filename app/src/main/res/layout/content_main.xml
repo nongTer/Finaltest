@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เพิ่มรายชื่อ"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/Id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="ชื่อ"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/fist"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="นามสกุล"
+            android:inputType="text"
+            android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="ชื่อเล่น"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="รหัสนักศึกษา"
+            android:inputType="text"
+            android:layout_marginRight="20dp"/>
+
+
+    </LinearLayout>
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เพิ่ม"
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
