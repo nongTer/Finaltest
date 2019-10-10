@@ -2,6 +2,7 @@ package com.example.finaltest
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
@@ -34,5 +35,18 @@ class DatabaseHelper(context: Context):SQLiteOpenHelper(context,DATABASE_NAME,nu
         cv.put(Col5,student)
         val  res =db.insert(TABLE_NAME,null,cv)
         return !res.equals(-1)
+
+    }
+    fun  getAllData(): Cursor {
+        val db =this.writableDatabase
+        return  db.rawQuery("SELECT * FROM $TABLE_NAME",null)
+    }
+    fun  getData(id:String):Cursor{
+        val db = this.writableDatabase
+        return  db.rawQuery("SELECT * FROM $TABLE_NAME WHERE ID=? ", arrayOf(id), null)
+    }
+    fun daleteData(id: String): Int? {
+        val db = this.writableDatabase
+        return db.delete(TABLE_NAME, "ID =? ", arrayOf(id))
     }
 }
